@@ -4,21 +4,25 @@ while True:
     print("\n \n You are a young birdy who has just learned how to fly. Your mommy has just dropped you out of your tree, which you have never left. Your little wings are not quite strong enough to support you. What do you do? \n")
 
     ans1 = input("type A to try and fly or type B to try to break your fall \n")
+    ans1 = ans1.lower()
 
     #start of flying branch
     if ans1 == "A":
         print("NO WAY! Your wings worked. Must have been all the extra worms your mommy fed you. Where are you going to fly now? \n")
         ans2 = input("type R to fly to the right and type L to fly to the left \n")
+        ans2 = ans2.lower()
 
         #Flying to the right
         if ans2 == "R":
             print("Trees! Trees! Trees! You are flying like a rollercoaster, dodging trees left and right. You are having so much fun you forget to remember the path back to your home tree. Yikes! Mommy is about to feed you. What do you do? \n")
             ans3 = input("type A to fly to the top of the nearest tree to look for the top of your tree, and type B to try and retrace your steps under the forest cover \n")
+            ans3 = ans3.lower()
 
             #start flying to the top of the nearest tree
             if ans3 == "A":
                 print("Wait! Is that your home tree? Didn't your momma put a piece of string on the top so she could find it when returning from her hunting trip? You are tired from your rollercoaster flying experience, what do you do?\n")
-                ans4 = input("Press A to try and fly above the trees home and press B to stay and cry for mommy")
+                ans4 = input("Press A to try and fly above the trees home and press B to stay and cry for mommy\n")
+                ans4 = ans4.lower()
 
                 #Go home
                 if ans4 == "A":
@@ -34,6 +38,7 @@ while True:
             elif ans3 == "B":
                 print("You start trying to retrace your steps (or flies, how does this work for birds?) but because of your initial windy path, the going gets rough. You are kind of tired, and are scared of getting more lost.\n")
                 ans5 = input("Press A to try and build a nest to snuggle in for the night, and press B to forge ahead\n")
+                ans5 = ans5.lower()
 
                 #stop due to fatigue
                 if ans5 == "A":
@@ -49,12 +54,14 @@ while True:
         #flying to the left
         elif ans2 == "L":
             print("Where did all the trees go? You are flying through an open field! What is this magic? You fly and fly chasing little bugs until your tiny body gets tired. What do you do? \n")
-            ans4 = input("type A to take a rest on a log in the marshy area, type B to turn around and find your way home \n")
+            ans8 = input("type A to take a rest on a log in the marshy area, type B to turn around and find your way home \n")
+            ans8 = ans8.lower()
 
             #take a rest
-            if ans4 == "A":
+            if ans8 == "A":
                 print("Bubble bubble. The log starts to sink into the muddy marsh! What is this? You don't know how to swim. What do you do?\n")
                 ans6 = input("Press A to try and stay on the log and press B to test your swimming skills\n")
+                ans6 = ans6.lower()
 
                 #drown in the marsh
                 if ans6 == "A":
@@ -65,9 +72,10 @@ while True:
                     print("That bubble bubble was the sound of a snake swimming up. It smells fear and gobbles you in one bit. I guess that's what a snake belly looks like \n")
 
             #find home
-            elif ans4 == "B":
+            elif ans8 == "B":
                 print("Good choice...for now. Since you are so tired, you are really struggling to get home \n")
                 ans7 = input("Press A to hop on the ground accross the field and press B to try to fly \n")
+                ans7 = ans7.lower()
 
                 #hop on the ground
                 if ans7 == "A":
